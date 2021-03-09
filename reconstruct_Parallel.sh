@@ -4,6 +4,8 @@
 # It assigns uniformly all the timesteps between CPUs
 # Launch from your OpenFOAM case folder
 
+module load openfoam/last
+
 # first we get startTime, endTime and dt from the case itself:
 start=`cat system/controlDict | grep startTime | tr -s " " | cut -d' ' -f2 | cut -d';' -f1`
 stop=`cat system/controlDict | grep endTime | tr -s " " | cut -d' ' -f2 | cut -d';' -f1 | tail -1`
