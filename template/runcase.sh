@@ -6,6 +6,7 @@ module load openfoam/last
 solver=`cat system/controlDict | grep application | tr -s " " | cut -d' ' -f2 | cut -d';' -f1 | tail -1`
 
 foamGet Allclean
+chmod +x Allclean
 sh ./Allclean
 blockMesh
 decomposePar
