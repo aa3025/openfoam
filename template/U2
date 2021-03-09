@@ -1,0 +1,30 @@
+    }
+
+    outlet
+    {
+        type            zeroGradient;
+    }
+    
+    top
+    {
+	type		slip;
+    }
+
+    bottom
+    {
+	type		slip;
+    }
+    
+    cylinder
+    {
+	type		fixedValue;
+	value		uniform (0 0 0);
+    }
+    
+    sides
+    {
+        type            empty;
+    }
+}
+
+// ************************************************************************* //
